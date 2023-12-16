@@ -19,8 +19,8 @@ const initializeServerAndDb = async (req, res) => {
       filename: dbpath,
       driver: sqlite3.Database,
     });
-    app.listen(3007, () => {
-      console.log("server started on 3007");
+    app.listen(3005, () => {
+      console.log("server started on 3005");
     });
   } catch (err) {
     console.log(err.message);
@@ -166,17 +166,4 @@ WHERE
   res.send("Book deleted");
 });
 
-// const myName = [
-//     "Hello",
-//     "hii"
-// ]
 
-// app.get("/route",(req,res) =>{
-//     // res.send("Heelooo Anushkaa");
-//     res.send(myName)
-//     console.log("heyy")
-// });
-
-// app.listen(5000, () => {
-//     console.log("Server started on port 5000");
-//   });
